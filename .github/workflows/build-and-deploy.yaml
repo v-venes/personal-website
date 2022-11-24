@@ -1,18 +1,17 @@
 name: Build and Deploy to Firebase
 run-name: ${{ github.actor }} is building a new version of website 🚀
-on: 
+on:
   push:
     branches: main
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was triggered by a ${{ github.event_name }} event."
       - name: Check out repository code
-        - uses: actions/checkout@v3
-        - uses: actions/setup-node@v3
-          with:
-            node-version: 16
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Build project
       - run: npm run build
       - name: Host on Firebase
