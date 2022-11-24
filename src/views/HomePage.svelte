@@ -30,7 +30,7 @@
           <Icon name="linkedin" />
         </Button>
         <Button
-          href="https://twitter.com/99_venes"
+          href="https://twitter.com/42_venes"
           target="_blank"
           class="social-media-btn twitter-btn"
         >
